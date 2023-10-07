@@ -75,7 +75,7 @@ function button_event_handler()
     if left_bumper then 
         set_button_assignment(0, "sim/flight_controls/flaps_up")
         set_button_assignment(4, "sim/flight_controls/flaps_down") 
-    elseif right_bumper_hold then 
+    elseif right_bumper then 
         set_button_assignment(0, "sim/general/zoom_in")
         set_button_assignment(4, "sim/general/zoom_out")
     else
