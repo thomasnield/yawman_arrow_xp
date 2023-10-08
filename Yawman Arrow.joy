@@ -40,10 +40,10 @@ Axis Group (Thumbstick): 0 1
 Axis 0 (x): 584 410
 Axis 1 (y): 0 0
 
-Axis 2 (Yaw; z): 960 120
+Axis 2 (Slider; y): 1050 1300
 
 Axis 3 (Slider; y): 875 1300
-Axis 4 (Slider; y): 1050 1300
+Axis 4 (Yaw; z): 960 120 
 
 Axis 5 (Slider; y): 1454 930
 Axis 6 (Slider; y): 1580 930
