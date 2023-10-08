@@ -7,34 +7,9 @@ function set_axis_assignments()
 end 
 
 --[[
-You can button_sniffer.lua to find button numbers by pressing them
+How buttons are assigned numbers in XP are cryptic. 
+But you can use button_sniffer.lua to find the button numbers by pressing each one on the controller
 https://github.com/X-Friese/FlyWithLua/blob/master/FlyWithLua/Internals/button_sniffer.lua
-
-button 0 - POV up 
-button 1 - 
-button 2 - POV right
-button 3 - 
-button 4 - POV down
-button 5 -  
-button 6 - POV left
-button 7 - 
-button 8 - joystick click 
-button 9 - sixpack 1
-button 10 - sixpack 2
-button 11 - sixpack 3
-button 12 - sixpack 4
-button 13 - sixpack 5
-button 14 - sixpack 6
-button 15 - POV center 
-button 16 - right bumper (*)
-button 17 - dpad center (*) 
-button 18 - left bumper (*)
-button 19 - rotate wheel down (*)
-button 20 - rotate wheel up  (*)
-button 21 - dpad up (*)
-button 22 - dpad left (*)
-button 23 - dpad down (*)
-button 24 - dpad right (*)
 --]]
 
 POV_UP = 0
@@ -65,22 +40,23 @@ function button_event_handler()
     left_bumper = button(LEFT_BUMPER)
     right_bumper = button(RIGHT_BUMPER)
     dpad_up = button(DPAD_UP)
-    
+    sixpack_1 = button(SIXPACK_1)
+    sixpack_3 = button(SIXPACK_3)
+
     -- these are commands, including modified ones 
-    
-    -- PARKING BRAKES
-    -- left and right bumper both pressed 
     if left_bumper then 
         set_button_assignment(RIGHT_BUMPER, "sim/flight_controls/brakes_toggle_max")        
-
 
         set_button_assignment(DPAD_LEFT, "sim/autopilot/heading_down")
         set_button_assignment(DPAD_RIGHT, "sim/autopilot/heading_up")
         
-    --[[elseif right_bumper then 
-        set_button_assignment(POV_UP, )
-        set_button_assignment(POV_DOWN, "sim/general/zoom_out")]]--
-    
+    elseif right_bumper then 
+        set_button_assignment(SIXPACK_1, "sim/autopilot/level_change") -- airspeed hold 
+        set_button_assignment(SIXPACK_2, "sim/autopilot/fdir_toggle")
+        set_button_assignment(SIXPACK_3, "sim/autopilot/altitude_hold")
+        set_button_assignment(SIXPACK_5, "sim/autopilot/heading_hold")
+        set_button_assignment(SIXPACK_6, "sim/autopilot/vertical_speed")
+
     elseif dpad_up then 
         set_button_assignment(POV_LEFT, "sim/view/quick_look_8")
         set_button_assignment(POV_RIGHT, "sim/view/quick_look_7")
@@ -88,15 +64,11 @@ function button_event_handler()
         set_button_assignment(WHEEL_DOWN, "sim/flight_controls/flaps_up")
         set_button_assignment(WHEEL_UP, "sim/flight_controls/flaps_down") 
         
+    -- non-modified commands go here 
     else
         set_button_assignment(WHEEL_DOWN, "sim/flight_controls/pitch_trim_down")
         set_button_assignment(WHEEL_UP, "sim/flight_controls/pitch_trim_up")
 
-        set_button_assignment(DPAD_LEFT, "sim/general/zoom_in")
-        set_button_assignment(DPAD_RIGHT, "sim/general/zoom_out")
-
-        set_button_assignment(POV_UP, "sim/flight_controls/pitch_trim_down")
-        set_button_assignment(POV_DOWN, "sim/flight_controls/pitch_trim_up")
 
         set_button_assignment(RIGHT_BUMPER, "sim/none/none")
     end 
