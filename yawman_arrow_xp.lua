@@ -86,3 +86,22 @@ do_every_draw("button_event_handler()")
 
 
 add_macro("Initialize Arrow Multipress", "set_up_yawman_arrow()")
+
+--[[
+if (PLANE_ICAO == "C172") then
+    set("sim/joystick/joystick_pitch_nullzone", 0.1)
+    set("sim/joystick/joystick_roll_nullzone", 0.1)
+elseif (PLANE_ICAO == "B738") then 
+    set("sim/joystick/joystick_pitch_nullzone", 0.2)
+    set("sim/joystick/joystick_roll_nullzone", 0.2)
+end 
+
+DataRef("is_external", "sim/graphics/view/view_is_external", "readonly")
+
+if is_external == 1 then 
+    set_button_assignment(SIXPACK_1, "sim/view/default_view")
+else
+    set_button_assignment(SIXPACK_1, "sim/view/chase")
+end 
+    
+--]]
