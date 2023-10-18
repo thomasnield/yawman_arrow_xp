@@ -116,23 +116,23 @@ Axis 6: joy_use_flap reverse
 # Button <button number>: hidden
 # Button <button number>: <command path, like "sim/operation/quit">
 #	See X-Plane/Resources/plugins/Commands.txt for a complete list of commands
-Button 0: sim/autopilot/electric_master_toggle
+Button 0: sim/autopilot/heading_sync_pilot
 Button 1: sim/view/still_spot
 Button 2: sim/view/ridealong
-Button 3: sim/view/tower
-Button 4: sim/view/default_view
-Button 5: sim/view/chase
-Button 6: sim/view/forward_with_hud
-Button 7: sim/general/zoom_out
-Button 8: sim/flight_controls/landing_gear_toggle
-Button 9: sim/general/zoom_in
+Button 3: sim/lights/landing_lights_toggle
+Button 4: sim/view/chase
+Button 5: sim/view/forward_with_hud
+Button 6: sim/flight_controls/landing_gear_toggle
+Button 7: sim/autopilot/heading
+Button 8: sim/autopilot/electric_master_toggle
+Button 9: sim/view/default_view
 Button 10: sim/flight_controls/brakes_toggle_max
 Button 11: sim/flight_controls/pitch_trim_down
 Button 12: sim/flight_controls/pitch_trim_up
-Button 13: sim/general/up
-Button 14: sim/general/left
-Button 15: sim/general/down
-Button 16: sim/general/right
+Button 13: sim/general/zoom_in
+Button 14: sim/view/glance_left
+Button 15: sim/general/zoom_out
+Button 16: sim/view/glance_right
 
 
 # FORMAT FOR HAT SWITCHES:
