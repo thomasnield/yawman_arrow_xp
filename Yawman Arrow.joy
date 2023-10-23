@@ -109,24 +109,24 @@ Axis 2: joy_use_mixt
 Axis 3: joy_use_prop
 Axis 4: joy_use_hdng
 Axis 5: joy_use_thro reverse
-Axis 6: joy_use_flap reverse
+Axis 6: joy_use_gear reverse
 
 
 # FORMAT FOR BUTTONS:
 # Button <button number>: hidden
 # Button <button number>: <command path, like "sim/operation/quit">
 #	See X-Plane/Resources/plugins/Commands.txt for a complete list of commands
-Button 0: sim/autopilot/heading_sync_pilot
-Button 1: sim/view/still_spot
-Button 2: sim/view/ridealong
-Button 3: sim/lights/landing_lights_toggle
-Button 4: sim/view/chase
-Button 5: sim/view/forward_with_hud
-Button 6: sim/flight_controls/landing_gear_toggle
-Button 7: sim/autopilot/heading
-Button 8: sim/autopilot/electric_master_toggle
-Button 9: sim/view/default_view
-Button 10: sim/flight_controls/brakes_toggle_max
+Button 0: sim/flight_controls/brakes_toggle_regular
+Button 1: sim/lights/landing_lights_toggle
+Button 2: sim/view/tower
+Button 3: sim/flight_controls/flaps_up
+Button 4: sim/operation/contact_atc_ptt
+Button 5: sim/view/chase
+Button 6: sim/flight_controls/flaps_down
+Button 7: sim/view/default_view
+Button 8: sim/autopilot/servos_toggle
+Button 9: sim/view/forward_with_hud
+Button 10: sim/autopilot/take_off_go_around
 Button 11: sim/flight_controls/pitch_trim_down
 Button 12: sim/flight_controls/pitch_trim_up
 Button 13: sim/general/zoom_in
