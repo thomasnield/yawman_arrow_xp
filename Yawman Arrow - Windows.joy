@@ -37,41 +37,59 @@ View: Top
 Image: Yawman Arrow.png
 
 Axis Group (Thumbstick): 3 2  
-Axis 3 (x): 584 410
+Axis 3 (x): 640 320
 Axis 2 (y): 0 0
 
-Axis 0 (Slider; y): 1050 1300
+Axis 0 (Slider; y): 1040 1220
 
-Axis 1 (Slider; y): 875 1300
-Axis 6 (Yaw; z): 960 120 
+Axis 1 (Slider; y): 876 1220
+Axis 6 (Yaw; z): 960 80 
 
-Axis 5 (Slider; y): 1454 930
-Axis 4 (Slider; y): 1580 930
+Axis 5 (Slider; y): 1416 870
+Axis 4 (Slider; y): 1534 870
 
-Hat Switch 0 (Hat Switch): 1294 748
+Hat Switch 0 (Hat Switch): 1290 650
 
-#Stick
-Button 0 (0): 504 472
+# joystick center click
+Button 0 (0): 540 430
 
-Button 1 (1): 1145 425
-Button 2 (2): 1292 425
-Button 3 (3): 1439 425
-Button 4 (4): 1145 574
-Button 5 (5): 1292 574
-Button 6 (6): 1439 574
+# six pack 1-6
+Button 1 (1): 1130 380
+Button 2 (2): 1265 380
+Button 3 (3): 1400 380
+Button 4 (4): 1130 513
+Button 5 (5): 1265 513
+Button 6 (6): 1400 513
 
-Button 7 (7): 1223 834
-Button 8 (8): 1390 204
-Button 9 (9): 702 820
-Button 10 (10): 530 204
-Button 11 (11): 510 1014
-Button 12 (12): 520 1300
+# hat switch center 
+Button 7 (7): 1205 760
 
-Button 13 (13): 702 716
-Button 14 (14): 598 822
-Button 15 (15): 702 928
-Button 16 (16): 808 822
+# bumper left
+Button 8 (8): 1360 160
 
+# dpad center 
+Button 9 (9): 720 750
+
+# bumper right 
+Button 10 (10): 560 160
+
+# wheel up 
+Button 11 (11): 540 920
+
+# wheel down
+Button 12 (12): 550 1215
+
+# dpad up 
+Button 13 (13): 720 650
+
+# dpad left 
+Button 14 (14): 620 750
+
+# dpad down 
+Button 15 (15): 720 840
+
+# dpad right 
+Button 16 (16): 816 750
 
 Assignments:
 --------------------------------------------------------------
